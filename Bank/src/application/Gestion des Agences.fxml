@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="341.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GestionAgenceController">
+   <children>
+      <Pane layoutY="101.0" prefHeight="86.0" prefWidth="617.0" style="-fx-background-color: #f5f5f5;">
+         <children>
+            <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: #0f9d58;" text="      Retour" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <TextField layoutX="115.0" layoutY="11.0" prefHeight="30.0" prefWidth="366.0" promptText="Chercher" />
+            <Button layoutX="492.0" layoutY="11.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: #0f9d58;" text="     Chercher" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="20.0" fitWidth="32.0" layoutX="499.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/icons8-search-24.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="32.0" layoutX="21.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/icons8-go-back-24.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TableView fx:id="table" layoutX="13.0" layoutY="165.0" prefHeight="164.0" prefWidth="597.0">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="84.800048828125" text="Nom" />
+            <TableColumn fx:id="adresse" prefWidth="116.00000762939453" text="Adresse" />
+          <TableColumn fx:id="nbclients" prefWidth="102.4000244140625" text="Nombre Clients" />
+            <TableColumn fx:id="gouvernorat" prefWidth="94.4000244140625" text="Gouvernorat" />
+            <TableColumn fx:id="debitglobal" prefWidth="88.0" text="Debit Global" />
+            <TableColumn fx:id="creditglobal" prefWidth="107.9999938964844" text="Credit Global" />
+        </columns>
+      </TableView>
+      <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="86.0" prefWidth="618.0" style="-fx-background-color: #212121;">
+         <children>
+            <Label layoutX="210.0" layoutY="26.0" text="Liste des Agences" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
